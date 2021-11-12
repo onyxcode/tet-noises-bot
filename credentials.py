@@ -1,0 +1,2 @@
+lass Token:
+    token = ""
