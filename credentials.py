@@ -1,2 +1,2 @@
-lass Token:
+class Token:
     token = ""
