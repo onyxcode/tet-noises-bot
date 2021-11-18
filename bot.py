@@ -1,5 +1,6 @@
 import discord
 import json
+import jishaku
 from credentials import Token
 from discord import commands
 import discord.ext.commands
@@ -12,6 +13,7 @@ async def on_ready():
     print(f'{client.user} now online.')
 
 client.remove_command("help")
+client.load_extension("jishaku")
 
 @client.command()
 async def noise(ctx, supplied_noise_id: str = None):
